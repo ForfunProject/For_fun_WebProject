@@ -52,51 +52,154 @@
         <li><a class="dropdown-item" href="#riceNnoodle">飯、粥、麵</a></li>
         <li><a class="dropdown-item" href="#soup">湯品</a></li>
       </ul>
-  	</div>
+    </div>
+	
     <!--card1_steamed-->
     <p class="food-type">蒸點</p>
     <div class="card-group" id="steamed" style="width:1300px">
+      <!--蝦餃-->
       <div class="card">
         <img src="https://drive.google.com/uc?id=1V_4i4lNXRUwgukfbY_B-Btq_JlNd09dE" class="card-img-top rounded-circle" alt="..." width="120" height="280" style="width:100%">
         <div class="card-body">
           <h5 class="card-title">蝦餃&nbsp&nbsp$128</h5>
           <p class="card-text">Steamed Shrimp Dumplings</p>
-          <a href="#" class="btn btn-primary">See Detail</a>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal_1">
+    See Detail
+  		  </button>
         </div>
       </div>
+      <!--燒賣-->
       <div class="card">
         <img src="https://drive.google.com/uc?id=1N44XG-MLXbJ1lk1OcbeyWsoF-uso8Lt0" class="card-img-top rounded-circle" alt="..." width="140" height="280" style="width:100%">
         <div class="card-body">
           <h5 class="card-title">蟹子燒賣&nbsp&nbsp$108</h5>
           <p class="card-text">Pork Dumplings with Flying Fish Roe</p>
-          <a href="#" class="btn btn-primary">See Detail</a>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal_2">
+    See Detail
+  		  </button>
         </div>
       </div>
+      <!--流沙包-->
       <div class="card">
         <img src="https://drive.google.com/uc?id=1iGtxvUtmnbgCyHevsk9jwtgRysmf7O82" class="card-img-top rounded-circle" alt="..." width="120" height="280" style="width:100%">
         <div class="card-body">
           <h5 class="card-title">流沙包&nbsp&nbsp$108</h5>
           <p class="card-text">Custard Buns</p>
-          <a href="#" class="btn btn-primary">See Detail</a>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal_3">
+    See Detail
+  		  </button>
         </div>
       </div>
+      <!--糯米雞-->
       <div class="card">
         <img src="https://drive.google.com/uc?id=1pqkKVLfZbK2s7KX-N3DIbMaet3uWFHYH" class="card-img-top rounded-circle" alt="..." width="120" height="280" style="width:100%">
         <div class="card-body">
           <h5 class="card-title">糯米雞&nbsp&nbsp$138</h5>
           <p class="card-text">Steamed Chicken Rice with LotusLeaf Wrap</p>
-          <a href="#" class="btn btn-primary">See Detail</a>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal_4">
+    See Detail
+  		  </button>
         </div>
       </div>
+      <!--腸粉-->
       <div class="card">
         <img src="https://drive.google.com/uc?id=1usKlcNSa8rAT2MQfGCHh8ZLERem1NubV" class="card-img-top rounded-circle" alt="..." width="120" height="280" style="width:100%">
         <div class="card-body">
           <h5 class="card-title">鮮蝦腸粉&nbsp&nbsp$118</h5>
           <p class="card-text">Steamed Rice Rolls with Shrimp</p>
-          <a href="#" class="btn btn-primary">See Detail</a>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal_5">
+    See Detail
+  		  </button>
         </div>
       </div>
     </div>
+    <!-- The Modal_1 -->
+    <div class="modal fade" id="myModal_1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">蝦餃</h4>
+          </div>
+          <!-- Modal body -->
+          <div class="modal-body">
+            熱量: 45大卡/1顆 (四入)
+            <br>注意食材: 蝦 <br>~建議搭配鼓油使用喔~
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- The Modal_2 -->
+    <div class="modal fade" id="myModal_2">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">蟹子燒賣</h4>
+          </div>
+          <!-- Modal body -->
+          <div class="modal-body">
+            熱量: 40卡路里/1顆 (四入)
+            <br>注意食材: 蝦&豬肉 <br>~建議搭配鼓油使用喔~
+            <br>豬肉產地: 台灣
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- The Modal_3 -->
+    <div class="modal fade" id="myModal_3">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">流沙包</h4>
+          </div>
+          <!-- Modal body -->
+          <div class="modal-body">
+            熱量: 110卡路里/1顆 (三入)
+            <br>注意食材: 蛋&牛奶
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- The Modal_4 -->
+    <div class="modal fade" id="myModal_4">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">糯米雞</h4>
+          </div>
+          <!-- Modal body -->
+          <div class="modal-body">
+            熱量: 360卡路里/1份 (一入)
+            <br>注意食材: 蝦&雞肉&豬肉&蛋 
+            <br>豬肉產地: 西班牙、台灣
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- The Modal_5 -->
+    <div class="modal fade" id="myModal_5">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">鮮蝦腸粉</h4>
+          </div>
+          <!-- Modal body -->
+          <div class="modal-body">
+            熱量: 40卡路里/1份 (三入)
+            <br>注意食材: 蝦 <br>~建議搭配鼓油使用喔~
+          </div>
+        </div>
+      </div>
+    </div>
+	
     <!--card2_fried-->
     <p class="food-type">煎、炸、焗、烤</p>
     <div class="card-group" id="fried" style="width:1300px">
@@ -141,6 +244,7 @@
         </div>
       </div>
     </div>
+	
     <!--card3_riceNnoodle-->
     <p class="food-type">飯、粥、麵</p>
     <div class="card-group" id="riceNnoodle" style="width:1300px">
@@ -185,6 +289,7 @@
         </div>
       </div>
     </div>
+	
     <!--card4_soup-->
     <p class="food-type">湯品</p>
     <div class="card-group" id="soup" style="width:1300px">
