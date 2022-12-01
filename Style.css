@@ -1,0 +1,8 @@
+body{
+    background-color: #252736;
+}
+.homepagePic{
+    color: white;
+    font-size: 100px;
+    position: absolute;left: 760px;z-index: 3;
+}
