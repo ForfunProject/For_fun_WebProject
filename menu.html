@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Menu</title>
+  <meta charset="utf-8">
+  <!--bootstrap link-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="Restaurant_Introduction.css" rel="stylesheet">
+</head>
+
+<body>
+
+	<!--navbar-->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    	<div class="container-fluid">
+        	<!--logo-->
+            <a class="navbar-brand" href="home-page"><img src="https://drive.google.com/uc?id=1ZOz2xB9ujEd49PXrOSA89IJ6Vz8-zRNH" class="rounded-circle" alt="Cinque Terre" width="55" height="55"></a>
+            <div class="collapse navbar-collapse" id="mynavbar">
+              <!--link to other page-->
+              <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="Restaurant_Introduction.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="menu.html">Menu</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Restaurant_Introduction.html">About</a>
+                </li>
+		<li class="nav-item">
+                  <a class="nav-link" href="contact.html">News&Contact</a>
+                </li>
+              </ul>
+              <!--search box-->
+              <form class="d-flex">
+                <input class="form-control me-2" type="text" placeholder="Search">
+                <button class="btn btn-primary" type="button">Search</button>
+              </form>
+            </div>
+        </div>
+	</nav>
+    <!--dropdowns-->
+    <p></p>
+    <div class="dropdown d-grid">
+      <button type="button" class="btn btn-outline-info dropdown-toggle" data-bs-toggle="dropdown">
+        ~按此直達食物分類~
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#steamed">蒸點</a></li>
+        <li><a class="dropdown-item" href="#fried">煎、炸、焗、烤</a></li>
+        <li><a class="dropdown-item" href="#riceNnoodle">飯、粥、麵</a></li>
+        <li><a class="dropdown-item" href="#soup">湯品</a></li>
+      </ul>
+    </div>
+	
+    <!--card1_steamed-->
+    <p class="food-type">蒸點</p>
+    <div class="card-group" id="steamed" style="width:1300px">
+      <!--蝦餃-->
+      <div class="card">
+        <img src="https://drive.google.com/uc?id=1V_4i4lNXRUwgukfbY_B-Btq_JlNd09dE" class="card-img-top rounded-circle" alt="..." width="120" height="280" style="width:100%">
+        <div class="card-body">
+          <h5 class="card-title">蝦餃&nbsp&nbsp$128</h5>
+          <p class="card-text">Steamed Shrimp Dumplings</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal_1">
+    See Detail
+  		  </button>
+        </div>
+      </div>
+      <!--燒賣-->
+      <div class="card">
+        <img src="https://drive.google.com/uc?id=1N44XG-MLXbJ1lk1OcbeyWsoF-uso8Lt0" class="card-img-top rounded-circle" alt="..." width="140" height="280" style="width:100%">
+        <div class="card-body">
+          <h5 class="card-title">蟹子燒賣&nbsp&nbsp$108</h5>
+          <p class="card-text">Pork Dumplings with Flying Fish Roe</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal_2">
+    See Detail
+  		  </button>
+        </div>
+      </div>
+      <!--流沙包-->
+      <div class="card">
+        <img src="https://drive.google.com/uc?id=1iGtxvUtmnbgCyHevsk9jwtgRysmf7O82" class="card-img-top rounded-circle" alt="..." width="120" height="280" style="width:100%">
+        <div class="card-body">
+          <h5 class="card-title">流沙包&nbsp&nbsp$108</h5>
+          <p class="card-text">Custard Buns</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal_3">
+    See Detail
+  		  </button>
+        </div>
+      </div>
+      <!--糯米雞-->
+      <div class="card">
+        <img src="https://drive.google.com/uc?id=1pqkKVLfZbK2s7KX-N3DIbMaet3uWFHYH" class="card-img-top rounded-circle" alt="..." width="120" height="280" style="width:100%">
+        <div class="card-body">
+          <h5 class="card-title">糯米雞&nbsp&nbsp$138</h5>
+          <p class="card-text">Steamed Chicken Rice with LotusLeaf Wrap</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal_4">
+    See Detail
+  		  </button>
+        </div>
+      </div>
+      <!--腸粉-->
+      <div class="card">
+        <img src="https://drive.google.com/uc?id=1usKlcNSa8rAT2MQfGCHh8ZLERem1NubV" class="card-img-top rounded-circle" alt="..." width="120" height="280" style="width:100%">
+        <div class="card-body">
+          <h5 class="card-title">鮮蝦腸粉&nbsp&nbsp$118</h5>
+          <p class="card-text">Steamed Rice Rolls with Shrimp</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal_5">
+    See Detail
+  		  </button>
+        </div>
+      </div>
+    </div>
+	
+    <!-- The Modal_1 -->
+    <div class="modal fade" id="myModal_1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">蝦餃</h4>
+          </div>
+          <!-- Modal body -->
+          <div class="modal-body">
+            熱量: 45大卡/1顆 (四入)
+            <br>注意食材: 蝦 <br>~建議搭配鼓油使用喔~
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- The Modal_2 -->
+    <div class="modal fade" id="myModal_2">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">蟹子燒賣</h4>
+          </div>
+          <!-- Modal body -->
+          <div class="modal-body">
+            熱量: 40卡路里/1顆 (四入)
+            <br>注意食材: 蝦&豬肉 <br>~建議搭配鼓油使用喔~
+            <br>豬肉產地: 台灣
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- The Modal_3 -->
+    <div class="modal fade" id="myModal_3">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">流沙包</h4>
+          </div>
+          <!-- Modal body -->
+          <div class="modal-body">
+            熱量: 110卡路里/1顆 (三入)
+            <br>注意食材: 蛋&牛奶
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- The Modal_4 -->
+    <div class="modal fade" id="myModal_4">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">糯米雞</h4>
+          </div>
+          <!-- Modal body -->
+          <div class="modal-body">
+            熱量: 360卡路里/1份 (一入)
+            <br>注意食材: 蝦&雞肉&豬肉&蛋 
+            <br>豬肉產地: 西班牙、台灣
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- The Modal_5 -->
+    <div class="modal fade" id="myModal_5">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">鮮蝦腸粉</h4>
+          </div>
+          <!-- Modal body -->
+          <div class="modal-body">
+            熱量: 40卡路里/1份 (三入)
+            <br>注意食材: 蝦 <br>~建議搭配鼓油使用喔~
+          </div>
+        </div>
+      </div>
+    </div>
+	
+    <!--card2_fried-->
+    <p class="food-type">煎、炸、焗、烤</p>
+    <div class="card-group" id="fried" style="width:1300px">
+      <!--龍鬚蝦-->
+      <div class="card">
+        <img src="https://drive.google.com/uc?id=1GhVyvuUu8Lkuu93CpGCB8XEIDx1xJyFT" class="card-img-top rounded-circle" alt="..." width="120" height="280" style="width:100%">
+        <div class="card-body">
+          <h5 class="card-title">金絲龍鬚蝦&nbsp&nbsp$138</h5>
+          <p class="card-text">Fried Noodle Roll with Shrimp</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal_6">
+    See Detail
+  		  </button>
+        </div>
+      </div>
+      <!--明蝦角-->
+      <div class="card">
+        <img src="https://drive.google.com/uc?id=1y0P-r-A8Xhb-vrUgQ3aTTfQlj9tfG7Le" class="card-img-top rounded-circle" alt="..." width="140" height="280" style="width:100%">
+        <div class="card-body">
+          <h5 class="card-title">明蝦角&nbsp&nbsp$108</h5>
+          <p class="card-text">Fried Shrimp Dumplings</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal_7">
+    See Detail
+  		  </button>
+        </div>
+      </div>
+      <!--咸水角-->
+      <div class="card">
+        <img src="https://drive.google.com/uc?id=1aHUQVmf3BUEO4sVaqc8VLFvCe3tJEMwJ" class="card-img-top rounded-circle" alt="..." width="120" height="280" style="width:100%">
+        <div class="card-body">
+          <h5 class="card-title">咸水角&nbsp&nbsp$118</h5>
+          <p class="card-text">Fried Rice Dumplings</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal_8">
+    See Detail
+  		  </button>
+        </div>
+      </div>
+      <!--蘿蔔絲餅-->
+      <div class="card">
+        <img src="https://drive.google.com/uc?id=1g5439zHt6vUe_S68516tqEgmk70i5fNg" class="card-img-top rounded-circle" alt="..." width="120" height="280" style="width:100%">
+        <div class="card-body">
+          <h5 class="card-title">蘿蔔絲餅&nbsp&nbsp$128</h5>
+          <p class="card-text">Radish Puff Pastry</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal_9">
+    See Detail
+  		  </button>
+        </div>
+      </div>
+      <!--叉燒酥-->
+      <div class="card">
+        <img src="https://drive.google.com/uc?id=1V2jU5Ba30Lli4FnnFaaz01l2eJ60xmKt" class="card-img-top rounded-circle" alt="..." width="120" height="280" style="width:100%">
+        <div class="card-body">
+          <h5 class="card-title">叉燒酥&nbsp&nbsp$138</h5>
+          <p class="card-text">BBQ Pork Puff</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal_10">
+    See Detail
+  		  </button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- The Modal_6 -->
+    <div class="modal fade" id="myModal_6">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">金絲龍鬚蝦</h4>
+          </div>
+          <!-- Modal body -->
+          <div class="modal-body">
+            熱量: 276卡路里/1顆 (三入)
+            <br>注意食材: 蝦
+            <br>鮮蝦產地: 台灣
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- The Modal_7 -->
+    <div class="modal fade" id="myModal_7">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">明蝦角</h4>
+          </div>
+          <!-- Modal body -->
+          <div class="modal-body">
+            熱量: 223卡路里/1顆 (三入)
+            <br>注意食材: 蝦 <br>~建議搭配檸檬美乃滋使用喔~
+            <br>鮮蝦產地: 台灣
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- The Modal_8 -->
+    <div class="modal fade" id="myModal_8">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">咸水餃</h4>
+          </div>
+          <!-- Modal body -->
+          <div class="modal-body">
+            熱量: 195卡路里/1顆 (三入)
+            <br>注意食材: 蝦&豬肉
+            <br>豬肉產地: 丹麥
+            <br>鮮蝦產地: 台灣
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- The Modal_9 -->
+    <div class="modal fade" id="myModal_9">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">蘿蔔絲餅</h4>
+          </div>
+          <!-- Modal body -->
+          <div class="modal-body">
+            熱量: 285卡路里/1顆 (三入)
+            <br>注意食材: 蛋 
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- The Modal_10 -->
+    <div class="modal fade" id="myModal_10">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">叉燒酥</h4>
+          </div>
+          <!-- Modal body -->
+          <div class="modal-body">
+            熱量: 200卡路里/1顆 (三入)
+            <br>注意食材: 豬肉&蛋
+            <br>豬肉產地: 丹麥
+          </div>
+        </div>
+      </div>
+    </div>
+	
+    <!--card3_riceNnoodle-->
+    <p class="food-type">飯、粥、麵</p>
+    <div class="card-group" id="riceNnoodle" style="width:1300px">
+      <!--鳳爪排骨蒸飯-->
+      <div class="card">
+        <img src="https://drive.google.com/uc?id=1Xm6kaB8GldSps3qjT_p8PTXttQ3grxtQ" class="card-img-top rounded-circle" alt="..." width="120" height="280" style="width:100%">
+        <div class="card-body">
+          <h5 class="card-title">鳳爪排骨蒸飯&nbsp&nbsp$206</h5>
+          <p class="card-text">Steamed Chicken Feet and Spareribs Rice</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal_11">
+    See Detail
+  		  </button>
+        </div>
+      </div>
+      <!--鼓汁帶子蒸飯-->
+      <div class="card">
+        <img src="https://drive.google.com/uc?id=1SJs30kOK5LXElxyBTCiGyYRIXX7lj-Kv" class="card-img-top rounded-circle" alt="..." width="140" height="280" style="width:100%">
+        <div class="card-body">
+          <h5 class="card-title">鼓汁帶子蒸飯&nbsp&nbsp$216</h5>
+          <p class="card-text">Steamed Scallop Rice with Soy Sauce</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal_12">
+    See Detail
+  		  </button>
+        </div>
+      </div>
+      <!--臘味煲仔飯-->
+      <div class="card">
+        <img src="https://drive.google.com/uc?id=1LLHBajQjMqgpIuWYgWkW_twkiTAl3ezi" class="card-img-top rounded-circle" alt="..." width="120" height="280" style="width:100%">
+        <div class="card-body">
+          <h5 class="card-title">臘味煲仔飯&nbsp&nbsp$336</h5>
+          <p class="card-text">ClayPot Rice with Cantonese Sausage</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal_13">
+    See Detail
+  		  </button>
+        </div>
+      </div>
+      <!--皮蛋瘦肉粥-->
+      <div class="card">
+        <img src="https://drive.google.com/uc?id=1CN8_X-uqKpzeZsGGQVunq7XmUTr00DLV" class="card-img-top rounded-circle" alt="..." width="120" height="280" style="width:100%">
+        <div class="card-body">
+          <h5 class="card-title">皮蛋瘦肉粥&nbsp&nbsp$276</h5>
+          <p class="card-text">Century Egg Pork Lean Congee</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal_14">
+    See Detail
+  		  </button>
+        </div>
+      </div>
+      <!--干炒牛河-->
+      <div class="card">
+        <img src="https://drive.google.com/uc?id=1NAVKosTun4mtEfclbFTskFW4A9kxSzFT" class="card-img-top rounded-circle" alt="..." width="120" height="280" style="width:100%">
+        <div class="card-body">
+          <h5 class="card-title">干炒牛河&nbsp&nbsp$238</h5>
+          <p class="card-text">Fried RiceNoodle with Sliced Beef</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal_15">
+    See Detail
+  		  </button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- The Modal_11 -->
+    <div class="modal fade" id="myModal_11">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">鳳爪排骨蒸飯</h4>
+          </div>
+          <!-- Modal body -->
+          <div class="modal-body">
+            熱量: 339卡路里/1份 (一入)
+            <br>注意食材: 雞肉&豬肉&辣椒
+            <br>豬肉產地: 台灣、西班牙
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- The Modal_12 -->
+    <div class="modal fade" id="myModal_12">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">鼓汁帶子蒸飯</h4>
+          </div>
+          <!-- Modal body -->
+          <div class="modal-body">
+            熱量: 271卡路里/1份 (一入)
+            <br>注意食材: 海鮮
+            <br>海鮮產地: 台灣
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- The Modal_13 -->
+    <div class="modal fade" id="myModal_13">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">臘味煲仔飯</h4>
+          </div>
+          <!-- Modal body -->
+          <div class="modal-body">
+            熱量: 277卡路里/1份 (一入)
+            <br>注意食材: 豬肉
+            <br>豬肉產地: 台灣
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- The Modal_14 -->
+    <div class="modal fade" id="myModal_14">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">皮蛋瘦肉粥</h4>
+          </div>
+          <!-- Modal body -->
+          <div class="modal-body">
+            熱量: 264卡路里/1份 (一入)
+            <br>注意食材: 蛋、豬肉
+            <br>豬肉產地: 台灣、西班牙
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- The Modal_15 -->
+    <div class="modal fade" id="myModal_15">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">干炒牛河</h4>
+          </div>
+          <!-- Modal body -->
+          <div class="modal-body">
+            熱量: 835卡路里/1份 (一入)
+            <br>注意食材: 牛肉
+            <br>牛肉產地: 尼加拉瓜
+          </div>
+        </div>
+      </div>
+    </div>
+	
+    <!--card4_soup-->
+    <p class="food-type">湯品</p>
+    <div class="card-group" id="soup" style="width:1300px">
+      <!--人參雞湯-->
+      <div class="card">
+        <img src="https://drive.google.com/uc?id=1voRwIJJMu3Y71EAVSE7Q8tmRIdvMLrfw" class="card-img-top rounded-circle" alt="..." width="120" height="280" style="width:100%">
+        <div class="card-body">
+          <h5 class="card-title">人參雞湯&nbsp&nbsp$189</h5>
+          <p class="card-text">Ginseng Chicken Soup</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal_16">
+    See Detail
+  		  </button>
+        </div>
+      </div>
+      <!--杏仁膠豬靓湯-->
+      <div class="card">
+        <img src="https://drive.google.com/uc?id=1qYFGGM2-VeN5jjub8uIGc29SLjb2Lkmo" class="card-img-top rounded-circle" alt="..." width="140" height="280" style="width:100%">
+        <div class="card-body">
+          <h5 class="card-title">杏仁膠豬靓湯&nbsp&nbsp$189</h5>
+          <p class="card-text">Almond and Pork Soup</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal_17">
+    See Detail
+  		  </button>
+        </div>
+      </div>
+      <!--竹笙排骨湯-->
+      <div class="card">
+        <img src="https://drive.google.com/uc?id=1cH1KSgEdgjTwPdWgCBgQc3OFKbiemaWk" class="card-img-top rounded-circle" alt="..." width="120" height="280" style="width:100%">
+        <div class="card-body">
+          <h5 class="card-title">竹笙排骨湯&nbsp&nbsp$179</h5>
+          <p class="card-text">PorkRib Soup with Bamboo Fungus</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal_18">
+    See Detail
+  		  </button>
+        </div>
+      </div>
+      <!--海鮮豆腐煲-->
+      <div class="card">
+        <img src="https://drive.google.com/uc?id=182floKnnGC1a2fdguI2wpxMMFviKBhYb" class="card-img-top rounded-circle" alt="..." width="120" height="280" style="width:100%">
+        <div class="card-body">
+          <h5 class="card-title">海鮮豆腐煲&nbsp&nbsp$276</h5>
+          <p class="card-text">Seafood and Bean Curd in Casserole</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal_19">
+    See Detail
+  		  </button>
+        </div>
+      </div>
+      <!--鮑魚花膠羹湯-->
+      <div class="card">
+        <img src="https://drive.google.com/uc?id=1_S6GyylKG8_psTWBR5ygQxuDo_uHEvuN" class="card-img-top rounded-circle" alt="..." width="120" height="280" style="width:100%">
+        <div class="card-body">
+          <h5 class="card-title">鮑魚花膠羹湯&nbsp&nbsp$238</h5>
+          <p class="card-text">Abalone and FishMaw Broth</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal_20">
+    See Detail
+  		  </button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- The Modal_16 -->
+    <div class="modal fade" id="myModal_16">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">人參雞湯</h4>
+          </div>
+          <!-- Modal body -->
+          <div class="modal-body">
+            熱量: 215卡路里/1份 (一入)
+            <br>注意食材: 雞肉
+            <br>雞肉產地: 台灣
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- The Modal_17 -->
+    <div class="modal fade" id="myModal_17">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">杏仁膠豬靓湯</h4>
+          </div>
+          <!-- Modal body -->
+          <div class="modal-body">
+            熱量: 127卡路里/1份 (一入)
+            <br>注意食材: 豬肉
+            <br>豬肉產地: 台灣
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- The Modal_18 -->
+    <div class="modal fade" id="myModal_18">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">竹笙排骨湯</h4>
+          </div>
+          <!-- Modal body -->
+          <div class="modal-body">
+            熱量: 126卡路里/1份 (一入)
+            <br>注意食材: 豬肉
+            <br>豬肉產地: 台灣
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- The Modal_19 -->
+    <div class="modal fade" id="myModal_19">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">海鮮豆腐煲</h4>
+          </div>
+          <!-- Modal body -->
+          <div class="modal-body">
+            熱量: 309卡路里/1份 (一入)
+            <br>注意食材: 海鮮
+            <br>海鮮產地: 台灣
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- The Modal_20 -->
+    <div class="modal fade" id="myModal_20">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">鮑魚花膠羹湯</h4>
+          </div>
+          <!-- Modal body -->
+          <div class="modal-body">
+            熱量: 130卡路里/1份 (一入)
+            <br>注意食材: 海鮮
+            <br>海鮮產地: 台灣
+          </div>
+        </div>
+      </div>
+    </div>
+    
+</body>
