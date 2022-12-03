@@ -35,16 +35,17 @@ p,a,input,label,textarea,span,ul,li{
 }
 p1{  font-size: 42px;
     color: gold;
-    text-shadow: 2px 4px 3px black;    
+     
 }
 p2{
     font-size: 36px;
     color: gold;
-    text-shadow: 2px 4px 3px black;
+   
 }
 p3{
     font-size: 36px;
-    color:aliceblue;
+    color:gold;
+    
 }
 p4{
     font-size: 48px;
