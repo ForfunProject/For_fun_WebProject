@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="calculate.css" rel="stylesheet">
     <link href="Restaurant_Introduction.css" rel="stylesheet">
     <title>Document</title>
 </head>
@@ -30,27 +31,27 @@
                     <a class="nav-link ms-1" href="contact.html">News&Contact</a>
                   </li>
                 </ul>
-                <button type="button" class="btn btn-dark btn-outline-light btn-lg border-light border-1">LogIn</button>
+                <button type="button" class="btn btn-dark btn-outline-light btn-lg border-light border-1">費用計算</button>
               </div>
             </div>
         </nav>
-        <div class="mt-5 ms-5 me-5 p-5 bg-primary text-white rounded bg-black opacity-75">
-            <h1>我們的故事</h1>
-            <h2>等著瞎掰</h2>
+        <div class="btn-group">
+          <button type="dropdown-header" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" id="dropdown1" aria-expanded="false">
+            蒸點
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdown1">
+            <li><a class="dropdown-item" id="ShrimpDumplings">蝦餃</a></li>
+            <li><a class="dropdown-item" id="CrabRoeSiomai">蟹子燒賣</a></li>
+            <li><a class="dropdown-item" id="CustardBun">流沙包</a></li>
+            <li><a class="dropdown-item" id="StickyRiceChicken">糯米雞</a></li>
+            <li><a class="dropdown-item" id="ShrimpRiceRoll">鮮蝦腸粉</a></li>
+          </ul>
+          <button></button>
         </div>
-        <div class="parallax2 mt-0 ms-5 me-5 border-top border-bottom border-light border-3"></div>
-        <div class="mt-0 ms-5 me-5 p-5 bg-primary text-white rounded bg-black opacity-75">
-            <h1>我們的故事</h1>
-            <h2>等著瞎掰</h2>
-        </div>
-        <div class="parallax3 mt-0 ms-5 me-5 border-top border-light border-3"></div>
+        
      
     </div>
-    
-    
-    
-
-
+    <script src="ForfunProject.github.io\calculate.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>
