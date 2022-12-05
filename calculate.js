@@ -7,7 +7,7 @@ function Order(){
     var m = foodtype.value
     var money = parseInt(m)
     total = total+money
-    document.getElementById('tm').textContent=total+"元"
+    document.getElementById('tm').textContent="小記"+total+"元"
 
     const foodtext = document.getElementById('food')
     var text = foodtext.options[foodtext.selectedIndex].text 
