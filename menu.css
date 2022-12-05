@@ -1,8 +1,13 @@
 <style>
-.centercard{
-	display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
-}
+  .centercard{
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-wrap: wrap;
+  }
+  .food-type{
+      font-size: 30px;
+      display: flex;
+      justify-content: center;
+  }
 </style>
