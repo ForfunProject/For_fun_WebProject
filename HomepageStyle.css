@@ -1,13 +1,23 @@
 body{
     background-image: url("pic/cook.jpg");
+    background-size: cover;
 } 
-h1{
-    color: white;
+.word2{
+    color: black;
     font-family: 'Noto Sans TC', sans-serif;
-    font-size: 100px;
+    font-size: 50px;
+    position: relative; top:200px ;left:100px ;
 }
-h2{
+.word1{
     font-family: 'Noto Sans TC', sans-serif;
-    font-size: 200px;
+    font-size: 90px;
     color: white;
+    position: relative;top:130px;left: 20px;
+}
+p{
+    color: black;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 50px;
+    position: relative; top:250px ;left:100px ;
+
 }
