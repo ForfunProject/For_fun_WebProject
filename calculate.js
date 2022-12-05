@@ -16,3 +16,10 @@ function Order(){
     ul.appendChild(li)
     
 }
+
+function Clear()
+{   
+    total = 0
+    document.getElementById('tm').textContent='小記'+total+'元'
+    ul.innerHTML = ""
+}

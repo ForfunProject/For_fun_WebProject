@@ -35,7 +35,7 @@
               </div>
             </div>
         </nav>
-        <div>
+        <div class="bg-black opacity-85% p-5 mt-5 ms-5 me-5">
           <select class="p-2 " id="food">
             <optgroup label="蒸點" class=" text-bg-dark"></optgroup>
             <option value="128" >蝦餃</option>
@@ -63,12 +63,29 @@
             <option value="238" >鮑魚花膠羹湯</option>
 
           </select>
-          <button type="button" class="btn btn-primary" onclick="Order();ShowText(this)" >確認</button>
-          <a id="tm" class="text-bg-light">0元</a>
-          <ul id="OrderList" class="list-group w-25 text-bg-light  list-unstyled">
-            <li class="text-bg text-light ">餐點明細</li>
+          <button type="button" class="btn btn-primary" onclick="Order()" >確認</button>
+          <a id="tm" class="text-light fs-4 ms-4 ">0元</a>
+          <div class="text-light fw-bold fs-3 bg-green ms-3">餐點明細</div>
+          <ul id="OrderList" class="list-group w-25 fs-4 p-2 bg-white list-unstyled">
+          
           </ul>
+          <button type="button" class="btn btn-light mt-2" onclick="Clear()">清除</button>
+          <div class=" position-relative start-50 top-0" >
+            <a>成人</a>
+            <input name="adult" placeholder="請輸入人數" maxlength="10">
+            <a>位</a>
+            <br>
+            <a>未滿12歲兒童</a>
+            <input name="child" placeholder="請輸入人數" maxlength="10">
+            <a>位</a>
+            <br>
+            <a>共</a>
+            <input readonly value="0">
+            <a>位</a>
+          </div>
+          
         </div>
+        
         
      
     </div>
