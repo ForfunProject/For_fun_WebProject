@@ -1,19 +1,18 @@
 var total = 0
-var data = []
-
-
+const foodtype = document.getElementById('food')
+var ul = document.getElementById('OrderList')
 
 function Order(){
-    
-    document.getElementById("food")
+
+    var m = foodtype.value
     var money = parseInt(m)
     total = total+money
     document.getElementById('tm').textContent=total+"元"
-    for(i=0;i<data.length;i++)
-    var n = data.push(foodtype)
-    {
-        var node = document.createElement('li')
-        node.appendChild(data[i])
-        document.querySelector('ul').appendChild(node)
-    }
+
+    const foodtext = document.getElementById('food')
+    var text = foodtext.options[foodtext.selectedIndex].text 
+    var li = document.createElement('li')
+    li.innerHTML = text
+    ul.appendChild(li)
+    
 }
