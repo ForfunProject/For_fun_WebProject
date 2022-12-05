@@ -1,0 +1,14 @@
+body {
+    background-size: 100%;
+    /*圖片寬度為螢幕的100%*/
+    background-repeat: no-repeat;
+    /* 不重複圖片*/
+} 
+.section1.li{
+    color: rgb(78, 31, 140);
+    font-size: 24px;
+}
+h2{
+    font-family: 'Noto Sans TC', sans-serif;
+    /* color: coral; */
+}
