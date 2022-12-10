@@ -11,7 +11,7 @@
 </head>
 <body>
     <div class="parallax p-5" >
-        <nav class="navbar navbar-expand-sm navbar-dark bg-dark mt-10 ms-5 me-5 p-4">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark mt-10 ms-5 me-5 p-4 ">
             <div class="container-fluid">
               <h3 class="navbar-brand ms-3">九龍飲茶</h3>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
@@ -35,59 +35,68 @@
               </div>
             </div>
         </nav>
-        <div class="bg-black opacity-85% p-5 mt-5 ms-5 me-5">
-          <select class="p-2 " id="food">
-            <optgroup label="蒸點" class=" text-bg-dark"></optgroup>
-            <option value="128" >蝦餃</option>
-            <option value="108" >蟹子燒賣</option>
-            <option value="108" >流沙包</option>
-            <option value="138" >糯米雞</option>
-            <option value="118" >鮮蝦腸粉</option>
-            <optgroup label="煎、炸、焗、烤" class=" text-bg-dark text"></optgroup>
-            <option value="138" >金絲龍鬚蝦</option>
-            <option value="108" >明蝦角</option>
-            <option value="118" >咸水角</option>
-            <option value="128" >蘿蔔絲餅</option>
-            <option value="138" >叉燒酥</option>
-            <optgroup label="飯、粥、麵" class=" text-bg-dark text"></optgroup>
-            <option value="206" >鳳爪排骨蒸飯</option>
-            <option value="216" >鼓汁帶子蒸飯</option>
-            <option value="336" >臘味煲仔飯</option>
-            <option value="276" >皮蛋瘦肉粥</option>
-            <option value="238" >干炒牛河</option>
-            <optgroup label="湯品" class=" text-bg-dark text"></optgroup>
-            <option value="189" >人參雞湯</option>
-            <option value="189" >杏仁膠豬靓湯</option>
-            <option value="179" >竹笙排骨湯</option>
-            <option value="276" >海鮮豆腐煲</option>
-            <option value="238" >鮑魚花膠羹湯</option>
-
-          </select>
-          <button type="button" class="btn btn-primary" onclick="Order()" >確認</button>
-          <a id="tm" class="text-light fs-4 ms-4 ">0元</a>
-          <div class="text-light fw-bold fs-3 bg-green ms-3">餐點明細</div>
-          <ul id="OrderList" class="list-group w-25 fs-4 p-2 bg-white list-unstyled">
-          
-          </ul>
-          <button type="button" class="btn btn-light mt-2" onclick="Clear()">清除</button>
-          <div class=" position-relative start-50 top-0" >
-            <a>成人</a>
-            <input name="adult" placeholder="請輸入人數" maxlength="10">
-            <a>位</a>
-            <br>
-            <a>未滿12歲兒童</a>
-            <input name="child" placeholder="請輸入人數" maxlength="10">
-            <a>位</a>
-            <br>
-            <a>共</a>
-            <input readonly value="0">
-            <a>位</a>
+        <div class="container">
+          <div class="row">
+            <div class=" bg-black  p-5 mt-5 ms-5 me-5 bg-opacity-75 col-5">
+              <select class="p-2 " id="food">
+                <optgroup label="蒸點" class=" text-bg-dark"></optgroup>
+                <option value="128" >蝦餃</option>
+                <option value="108" >蟹子燒賣</option>
+                <option value="108" >流沙包</option>
+                <option value="138" >糯米雞</option>
+                <option value="118" >鮮蝦腸粉</option>
+                <optgroup label="煎、炸、焗、烤" class=" text-bg-dark text"></optgroup>
+                <option value="138" >金絲龍鬚蝦</option>
+                <option value="108" >明蝦角</option>
+                <option value="118" >咸水角</option>
+                <option value="128" >蘿蔔絲餅</option>
+                <option value="138" >叉燒酥</option>
+                <optgroup label="飯、粥、麵" class=" text-bg-dark text"></optgroup>
+                <option value="206" >鳳爪排骨蒸飯</option>
+                <option value="216" >鼓汁帶子蒸飯</option>
+                <option value="336" >臘味煲仔飯</option>
+                <option value="276" >皮蛋瘦肉粥</option>
+                <option value="238" >干炒牛河</option>
+                <optgroup label="湯品" class=" text-bg-dark text"></optgroup>
+                <option value="189" >人參雞湯</option>
+                <option value="189" >杏仁膠豬靓湯</option>
+                <option value="179" >竹笙排骨湯</option>
+                <option value="276" >海鮮豆腐煲</option>
+                <option value="238" >鮑魚花膠羹湯</option>
+    
+              </select>
+              <button type="button" class="btn btn-primary" onclick="Order()" >確認</button>
+              <a id="tm" class="text-light fs-4 ms-4 me-5">0元</a>
+              <div class="text-light fw-bold fs-3 bg-green ms-3">餐點明細</div>
+              <ul id="OrderList" class="list-group w-25 fs-4 p-2 bg-white list-unstyled">
+              
+              </ul>
+              <button type="button" class="btn btn-light mt-2" onclick="Clear()">清除</button>
+              <div class="mt-5">
+                
+              </div>
+              
+            </div>
+            <div class="bg-black  p-5 mt-5 ms-5 me-5 bg-opacity-75 col-5">
+              <h2 class="text-light fw-bold fs-3 ">成人<input class="ms-2 me-2" name="adult-number" placeholder="請輸入人數">位</h2>
+              <h2 class="text-light fw-bold fs-3">兒童<input class="ms-2 me-2" name="adult-number" placeholder="請輸入人數">位</h2>
+              <h2 class="text-light fw-bold fs-3">總共<input class="ms-2 me-2" name="adult-number" value="0" readonly>位</h2>
+              <button type="button" class="btn btn-primary mt-4 mb-4 " onclick="Cal()">計算</button>
+              <div class="col-6">
+                <h2 class="text-light fw-bold fs-3 ">小記<input readonly size="10" value="0">元</h2>
+                <h2 class="text-light fw-bold fs-3 ">服務費<input readonly value="0" size="10" >元</h2>
+                <h2 class="text-light fw-bold fs-3 ">成人均消<input value="0" readonly size="10" >元</h2>
+                <h2 class="text-light fw-bold fs-3 ">共餐費<input value="0" readonly size="10" >元</h2>
+              </div>
+              <h1 class="fw-bold fs-8 mt-5 text-danger">總計<input value="0" readonly size="10" >元</h1>
+              
+              
+              
+            </div>
           </div>
           
         </div>
         
-        
-     
     </div>
     <script src="calculate.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
