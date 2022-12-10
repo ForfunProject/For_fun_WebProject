@@ -1,8 +1,23 @@
 body{
-    background-color: #252736;
+    background-image: url("pic/cook.jpg");
+    background-size: cover;
+} 
+.word2{
+    color: black;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 50px;
+    position: relative; top:200px ;left:100px ;
 }
-.homepagePic{
+.word1{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 90px;
     color: white;
-    font-size: 100px;
-    position: absolute;left: 760px;z-index: 3;
+    position: relative;top:130px;left: 20px;
+}
+p{
+    color: black;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 50px;
+    position: relative; top:250px ;left:100px ;
+
 }
