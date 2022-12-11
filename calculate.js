@@ -1,13 +1,14 @@
-var total = 0
+var count = 0
 const foodtype = document.getElementById('food')
 var ul = document.getElementById('OrderList')
+
 
 function Order(){
 
     var m = foodtype.value
     var money = parseInt(m)
-    total = total+money
-    document.getElementById('tm').textContent="小記"+total+"元"
+    count = count+money
+    document.getElementById('tm').textContent="小記"+count+"元"
 
     const foodtext = document.getElementById('food')
     var text = foodtext.options[foodtext.selectedIndex].text 
@@ -17,9 +18,15 @@ function Order(){
     
 }
 function Clear(){
-    total=0
-    document.getElementById('tm').textContent="小記"+total+"元"
+    count=0
+    document.getElementById('tm').textContent="小記"+count+"元"
     while(ul.firstChild){
         ul.removeChild(ul.firstChild)
     }
+}
+function PeopleCount(){
+    var adult = parseInt(document.getElementById('Adult').value)  || 0
+    var child = parseInt(document.getElementById('Child').value)  || 0
+    var totalpeople = document.getElementById('TotalPeople')
+    totalpeople.value = adult+child
 }
