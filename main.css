@@ -1,15 +1,22 @@
 body {
-    /*背景圖片位置 */
+    /* 背景圖片位置 */
     background-size: 100%;
     /*圖片寬度為螢幕的100%*/
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; 
     /* 不重複圖片*/
-} 
+    opacity: 0.8; 
+}  
+
+li{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 24px;
+}
+
 h2,h3,h4,h5,h6{
     font-family: 'Noto Sans TC', sans-serif;
 }
 
-p,input,label,textarea,span,ul,li{
+p,input,label,textarea,span,ul{
     font-family: 'Open Sans', sans-serif;
 }
 a{
@@ -38,7 +45,7 @@ a{
     
 }
 p1{  font-size: 42px;
-    color:wheat;
+    color:rgb(117, 32, 151);
      
 }
 p2{
@@ -69,9 +76,9 @@ p4{
     background: #ecd6c7;
     margin: 0 auto;/*區塊置中*/
   }
-img-map{
-    width: 200px;
-    height: 200px;
+.img-map{
+    width: 980px;
+    height: 600px;
     background-repeat: no-repeat;
 }
 ul{
@@ -97,33 +104,8 @@ h1{
     }
 }
 
-/* .article{
-    width: 960px;
-    margin: 0 auto;
-    height: 400px;
-    padding: 40px;
-    font: 24px 'Arial';
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center center;
-    background-size: cover;
-    line-height: 28px;
+iframe{
+    position: 500%;
 }
-.section1{
-    color:#fff;
-    background-image:url(ForfunProject.github.io\pic\1.jpg) ;
-    text-shadow: 5px 4px 5px #575353;
-    font-weight: bold;
-}
-.section2{
-    color:#fff;
-    background-image:url(ForfunProject.github.io\pic\02-1.jpg) ;
-    text-shadow: 3px 4px 5px #373030;
-    font-weight: bold;
-}
-.section3{
-    color:#fff;
-    background-image:url(ForfunProject.github.io\pic\2.jpg) ;
-    text-shadow: 3px 4px 5px #373030;
-    font-weight: bold;
-} */
+
+
