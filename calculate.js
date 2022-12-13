@@ -35,6 +35,9 @@ function PeopleCount(){
 function Cal(){
     var adult = parseInt(document.getElementById('Adult').value)  || 0
     var child = parseInt(document.getElementById('Child').value)  || 0
+    if((adult+child)<1){
+        alert("用餐人數不可為0")
+    }else{
     var sc = (document.getElementById('ServiceCharge'))
     var scn = 0
     if((adult+child)>4){
@@ -58,6 +61,7 @@ function Cal(){
     
     var total = document.getElementById('total')
     total.value = count + scn + c
+    }   
 
 
 
